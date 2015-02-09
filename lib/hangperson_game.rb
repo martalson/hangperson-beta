@@ -21,6 +21,7 @@ class HangpersonGame
   end
 
   def guess(letter)
+    print "imguessing"
     if not letter or letter.length == 0 or /[^a-zA-Z]/.match(letter)
         raise ArgumentError
     elsif @guesses.include?(letter) or @wrong_guesses.include?(letter)
